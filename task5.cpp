@@ -2,14 +2,14 @@
 using namespace std;
 
 int main() {
-int n;
+int num;
     cout << "Enter a number: ";
-    cin >> n;
+    cin >> num;
     int fact = 1;
-    for(int i = 1; i <= n; i++){
+    for(int i = 1; i <= num; i++){
         fact *= i;
     }
-    cout << fact ;
+    cout << num << '!' << '=' <<fact ;
     system("pause");
     return 0;
 }
