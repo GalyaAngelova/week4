@@ -1,4 +1,3 @@
-# week4
 #include <iostream>
 using namespace std;
 
@@ -11,6 +10,7 @@ int main (){
     break;
     default : cout << "Wrong number!" << endl;
     }
+    system("pause");
     return 0;
 }
 
