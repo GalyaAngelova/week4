@@ -1,21 +1,27 @@
 #include <iostream>
 using namespace std;
 
-int main() {
- cout << "Enter n: ";
+int main (){
+    int num, n;
+    int numMax = INT_MIN;
+    cout << "How many numbers will you insert?: ";
     cin >> n;
-    int i;
-    int x = 0;
-    while (i < n){
-            cout << "Enter number: ";
-        cin >> i;
-        if (i < 0){
-           x += i;
-           cout << x;
+    for (int i = 0; i < n ; i++)
+        {
+        cout << "Insert number: ";
+        cin >> num;
+        if (num < 0 && num > numMax)
+        {
+            numMax = num;
         }
-
-    }
-    cout << n;
-    system("pause");
+        }
+        if(numMax == INT_MIN)
+        {
+           cout << "You have to insert a negative number." << endl;
+        }
+        else
+        {
+            cout << numMax;
+        }
     return 0;
 }
